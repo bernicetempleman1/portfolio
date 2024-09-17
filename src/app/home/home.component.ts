@@ -8,7 +8,9 @@ import { Component } from '@angular/core';
     <div>
       <h1>Bernice Templeman Portfolio</h1>
       <h2></h2>
-      <p>
+      <p>brief introduction to who you are,
+      a bucket list of things you want to do,
+      and navigation links to the other pages in your site.
 
       </p>
       <p>
@@ -41,7 +43,7 @@ import { Component } from '@angular/core';
             alt="image of Bernice"
           />
           <p>
-          
+
           </p>
         </div>
       </div>

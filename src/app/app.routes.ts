@@ -26,8 +26,5 @@ export const routes: Routes = [
     path: 'projects',
     component: ProjectsComponent,
   },
-  {
-    path: 'not-found',
-    component: NotFoundComponent,
-  },
+  {path: '**', component: NotFoundComponent},
 ];
