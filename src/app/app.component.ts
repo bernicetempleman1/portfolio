@@ -20,7 +20,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     <li><a routerLink="/resume">Resume</a></li>
     <li><a routerLink="/about">About</a></li>
     <li><a routerLink="/projects">Projects</a></li>
-    <li><a routerLink="/not-found">Not Found</a></li>
+    
   </ul>
 </nav>
 <section class="content">

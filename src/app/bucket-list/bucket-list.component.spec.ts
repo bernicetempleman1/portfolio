@@ -2,7 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BucketListComponent } from './bucket-list.component';
 import { CommonModule } from '@angular/common';
-import { Home } from '../home/home.component';
+import { BucketList } from '../home/home.component';
+
 
 describe('BucketListComponent', () => {
   let component: BucketListComponent;
@@ -16,10 +17,20 @@ describe('BucketListComponent', () => {
 
     fixture = TestBed.createComponent(BucketListComponent);
     component = fixture.componentInstance;
+
+    const mockOrder = {
+      todos: [
+        {  name: 'Software development work', description: '',  },
+        {  name: '', description: '' },
+      ],
+    };
+
+    component.bucketlist = mockOrder;
+
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create bucket list', () => {
     expect(component).toBeTruthy();
   });
 });
