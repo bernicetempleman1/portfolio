@@ -17,7 +17,7 @@ describe('ProjectsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create projects', () => {
     expect(component).toBeTruthy();
   });
 });

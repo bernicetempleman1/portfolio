@@ -8,16 +8,19 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   template: `
   <div class="wrapper">
   <header class="banner">
-  <img src="/assets/Portfolio.png" alt="website banner for portfolio" class="banner-img">
+  <img src="/assets/RPGCharacterBuilder1.png" alt="website banner for portfolio" class="banner-img">
 </header>
 <main class="main-content">
+
 
 <nav class="navbar">
   <ul>
     <li><a routerLink="/">Home</a></li>
+
     <li><a routerLink="/resume">Resume</a></li>
     <li><a routerLink="/about">About</a></li>
     <li><a routerLink="/projects">Projects</a></li>
+    <li><a routerLink="/not-found">Not Found</a></li>
   </ul>
 </nav>
 <section class="content">

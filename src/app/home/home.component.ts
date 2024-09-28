@@ -1,53 +1,55 @@
-import { Component } from '@angular/core';
+export interface Todo {
+  name: string;
+  description: string;
+}
+
+export interface BucketList {
+  todos: Todo[];
+}
+
+
+import { Component, EventEmitter, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { BucketListComponent } from '../bucket-list/bucket-list.component';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+
   template: `
     <div>
-      <h1>Bernice Templeman Portfolio</h1>
+      <h1>Bernice Templeman's Portfolio</h1>
       <h2></h2>
-      <p>brief introduction to who you are,
-      a bucket list of things you want to do,
-      and navigation links to the other pages in your site.
-
+      <p>Brief Introduction:
+        Hi, my name is Bernice Templeman, and I am a Software Developer.
+       I am completing a bachelor of science in web development at Bellevue University.
+       </p>
+      <p>
+       I first learned to program in high school and have always continued to update my skill set continually.
+       I previously completed a bachelor of science degree in Computer Science and a master of science degree in Computer Information Systems.
+      I have also worked in Information Technology as a Software Engineer, ServiceNow Developer and Administrator, Unix and Linux System Administrator, Network Attached Storage Technical Suppor Engineer II, and computer programmer.
+      </p>
+      <p>
+      I'm eager to leverage my expertise to help Companies achieve their financial goals and explore new growth opportunities.
+      </p>
+      <p>
+      In my spare time, I have worked on WordPress and WIX website development, learning new skills, exercising, and reading health and nutrition articles on longevity.
       </p>
       <p>
 
 
       </p>
-      <div class="highlights-container">
-        <div class="highlight">
-          <img
-            src="/assets/Map.png"
-            alt="image of evergreen trees"
-          />
-          <p>
 
-          </p>
-        </div>
-        <div class="highlight">
-          <img
-            src="/assets/House.png"
-            alt="image of a house"
-          />
-          <!-- -->
-          <p>
 
-          </p>
-        </div>
-        <div class="highlight">
-          <img
-            src="/assets/Bernice.jpg"
-            alt="image of Bernice"
-          />
-          <p>
-
-          </p>
-        </div>
-      </div>
     </div>
+
+    <div class="bucket-list">
+        <app-bucket-list [bucketlist]="bucketlist"></app-bucket-list>
+    </div>
+
+
+
   `,
   styles: [
     `
@@ -73,5 +75,30 @@ import { Component } from '@angular/core';
       }
     `,
   ],
+  imports: [CommonModule, BucketListComponent],
+
 })
-export class HomeComponent {}
+
+export class HomeComponent {
+
+  todos: Todo[] ;
+  bucketlist: BucketList;
+
+  @Output() orderUpdated = new EventEmitter<BucketList>();
+
+  constructor() {
+    this.todos = [];
+    this.bucketlist = { todos: [] };
+  }
+
+  createTodo(){
+
+  const newtodo : Todo = {
+    name: 'Software development paid work',
+        description: ''};
+
+  this.bucketlist = { todos: []};
+  this.bucketlist.todos.push(newtodo);
+}
+
+}

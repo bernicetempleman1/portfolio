@@ -27,4 +27,5 @@ export const routes: Routes = [
     component: ProjectsComponent,
   },
   {path: '**', component: NotFoundComponent},
+  {path: 'not-found', component: NotFoundComponent},
 ];
