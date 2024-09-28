@@ -8,7 +8,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   template: `
   <div class="wrapper">
   <header class="banner">
-  <img src="/assets/RPGCharacterBuilder1.png" alt="website banner for portfolio" class="banner-img">
+  <img src="/assets/BerniceHeroCloud.png" alt="website banner for portfolio" class="banner-img">
 </header>
 <main class="main-content">
 
