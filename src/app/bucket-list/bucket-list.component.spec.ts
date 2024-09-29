@@ -11,7 +11,7 @@ describe('BucketListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [BucketListComponent]
+      imports: [BucketListComponent,  CommonModule, HomeComponent]
     })
     .compileComponents();
 
