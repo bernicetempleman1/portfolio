@@ -11,9 +11,20 @@ import { Component } from '@angular/core';
 
       Detailed resume (education, skills, experience, certifications, awards).
       Link to download the resume as a PDF or other document format.
-
-
     </p>
+
+    <h2>Education</h2>
+
+    <h2>Skills</h2>
+
+    <h2>Experience</h2>
+
+
+    <h2>Certifications</h2>
+
+
+
+
   `,
   styles: ``
 })
