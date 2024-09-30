@@ -98,7 +98,7 @@ export class HomeComponent {
   constructor() {
     this.todos = [{
       name: 'Software development paid work',
-      description: 'Be Happy'
+      description: 'Happy'
     },
     ];
     this.bucketlist = { todos: [] };

@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
           @for (todo of bucketlist.todos; track todo) {
           <li>
             <strong
-              >{{ todo.name }} is a {{ todo.description }}
+              >{{ todo.name }} : {{ todo.description }}
             </strong>
             <br />
           </li>
