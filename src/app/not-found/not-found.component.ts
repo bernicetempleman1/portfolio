@@ -16,7 +16,8 @@ import { Routes, Router } from '@angular/router';
   template: `
     <h1>404</h1>
     <h2>Page Not Found</h2>
-    <p><a routerLink="/">Home Page</a></p>
+    <p><a href="./">Home Page</a></p>
+
   `,
   styles: ``
 })
@@ -24,3 +25,4 @@ export class NotFoundComponent {
 
 }
 
+//<p><a routerLink="/">Home Page</a></p>
