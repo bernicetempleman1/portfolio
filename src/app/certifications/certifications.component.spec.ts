@@ -17,7 +17,7 @@ describe('CertificationsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create certifications', () => {
     expect(component).toBeTruthy();
   });
 });
