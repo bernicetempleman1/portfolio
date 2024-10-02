@@ -16,11 +16,11 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 <nav class="navbar">
   <ul>
     <li><a routerLink="/">Home</a></li>
-
     <li><a routerLink="/resume">Resume</a></li>
     <li><a routerLink="/about">About</a></li>
     <li><a routerLink="/projects">Projects</a></li>
-    
+    <li><a routerLink="/certifications">Certifications</a></li>
+
   </ul>
 </nav>
 <section class="content">
@@ -34,6 +34,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 <a routerLink="/resume">Resume</a> |
 <a routerLink="/about">About</a> |
 <a routerLink="/projects">Projects</a> |
+<a routerLink="/certifications">Certifications</a> |
 </nav>
 <p>&copy; 2024 Bernice Templeman's Portfolio</p>
 </footer>
