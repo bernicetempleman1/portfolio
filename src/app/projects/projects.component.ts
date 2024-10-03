@@ -30,6 +30,7 @@ import { Component } from '@angular/core';
             <p>{{ item.technologies }}</p>
             <p>{{ item.learned }}</p>
             <p>{{ item.link }}</p>
+
           </div>
         </li>
         }
@@ -62,6 +63,14 @@ export class ProjectsComponent {
   constructor() {
     this.projects = [
       {
+        name: `Bernice Templeman's Portfolio`,
+        description:
+          '',
+        technologies: 'Angular, JavaScript, HTML, CSS',
+        learned: '',
+        link: '',
+      },
+      {
         name: 'RPG Character Builder',
         description:
           'The RPG Character Builder creates an immersive web application that caters to gamers and RPG enthusiasts.!',
@@ -73,7 +82,7 @@ export class ProjectsComponent {
         name: 'In and Out Books',
         description:
           'The idea of the “In-N-Out-Books” was inspired by the love of books and the desire to create a platform where uses can manage their own collection of book',
-        technologies: 'Mage',
+        technologies: '',
         learned: '',
         link: 'https://templeman-in-n-out-books.onrender.com',
       },
@@ -89,8 +98,8 @@ export class ProjectsComponent {
         name: 'WhatABook',
         description:
           '',
-        technologies: 'Mage',
-        learned: 'Eternal',
+        technologies: '',
+        learned: '',
         link: 'https://github.com/bernicetempleman1/web-335/',
       },
       {
@@ -145,3 +154,4 @@ export class ProjectsComponent {
   }
 }
 
+//<p [innerHTML]="item.link"></p>
