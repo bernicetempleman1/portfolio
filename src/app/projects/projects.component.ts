@@ -30,6 +30,7 @@ import { Component } from '@angular/core';
             <p>{{ item.technologies }}</p>
             <p>{{ item.learned }}</p>
             <p>{{ item.link }}</p>
+            <a href="{{ item.link }}">Link</a>
 
           </div>
         </li>
@@ -68,7 +69,7 @@ export class ProjectsComponent {
           '',
         technologies: 'Angular, JavaScript, HTML, CSS',
         learned: '',
-        link: '',
+        link: 'https://github.com/bernicetempleman1/portfolio',
       },
       {
         name: 'RPG Character Builder',
@@ -76,8 +77,17 @@ export class ProjectsComponent {
           'The RPG Character Builder creates an immersive web application that caters to gamers and RPG enthusiasts.!',
         technologies: 'Angular, JavaScript, HTML, CSS',
         learned: '',
-        link: '',
+        link: 'https://bernicetempleman1.github.io/rpg-character-builder/',
       },
+      {
+        name: 'Virtual Taco Stand',
+        description:
+          'The RPG Character Builder creates an immersive web application that caters to gamers and RPG enthusiasts.!',
+        technologies: 'Angular, JavaScript, HTML, CSS',
+        learned: '',
+        link: 'https://bernicetempleman1.github.io/virtual-taco-stand/',
+      },
+
       {
         name: 'In and Out Books',
         description:
