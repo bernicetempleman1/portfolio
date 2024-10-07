@@ -66,23 +66,23 @@ export class ProjectsComponent {
       {
         name: `Bernice Templeman's Portfolio`,
         description:
-          '',
-        technologies: 'Angular, JavaScript, HTML, CSS',
+          'WEB 425: Angular and TypeScript.',
+        technologies: 'Angular, TypeScript, JavaScript, HTML, CSS',
         learned: '',
         link: 'https://github.com/bernicetempleman1/portfolio',
       },
       {
         name: 'RPG Character Builder',
         description:
-          'The RPG Character Builder creates an immersive web application that caters to gamers and RPG enthusiasts.!',
-        technologies: 'Angular, JavaScript, HTML, CSS',
+          'WEB 425: Angular and TypeScript.The RPG Character Builder creates an immersive web application that caters to gamers and RPG enthusiasts.!',
+        technologies: 'Angular, TypeScript, JavaScript, HTML, CSS',
         learned: '',
         link: 'https://bernicetempleman1.github.io/rpg-character-builder/',
       },
       {
         name: 'Virtual Taco Stand',
         description:
-          'The RPG Character Builder creates an immersive web application that caters to gamers and RPG enthusiasts.!',
+          'WEB 425: Angular and TypeScript.The RPG Character Builder creates an immersive web application that caters to gamers and RPG enthusiasts.!',
         technologies: 'Angular, JavaScript, HTML, CSS',
         learned: '',
         link: 'https://bernicetempleman1.github.io/virtual-taco-stand/',
@@ -91,77 +91,60 @@ export class ProjectsComponent {
       {
         name: 'In and Out Books',
         description:
-          'The idea of the “In-N-Out-Books” was inspired by the love of books and the desire to create a platform where uses can manage their own collection of book',
+          'WEB 420: RESTful APIs. The idea of the “In-N-Out-Books” was inspired by the love of books and the desire to create a platform where uses can manage their own collection of book',
         technologies: '',
         learned: '',
         link: 'https://templeman-in-n-out-books.onrender.com',
       },
       {
-        name: 'BioSite',
-        description:
-          'GitHub BioSite Portfolio',
-        technologies: 'HTML, CSS',
-        learned: '',
-        link: 'https://bernicetempleman1.github.io/bioSite/',
-      },
-      {
         name: 'WhatABook',
         description:
-          '',
+          'WEB 335: NoSQL. ',
         technologies: '',
         learned: '',
         link: 'https://github.com/bernicetempleman1/web-335/',
       },
       {
-        name: '',
+        name: 'Node.js with Express',
         description:
-          '',
-        technologies: '',
+          'WEB 340',
+        technologies: 'Node.js, Express, JavaScript',
         learned: '',
-        link: '',
+        link: 'https://github.com/bernicetempleman1/web-340',
       },
       {
-        name: '',
+        name: 'Enterprise JavaScript II',
         description:
-          '',
-        technologies: '',
+          'WEB 330',
+        technologies: 'JavaScript, HTML, CSS',
         learned: '',
-        link: '',
+        link: 'https://bernicetempleman1.github.io/web-330/',
       },
       {
-        name: '',
+        name: 'Enterprise JavaScript I',
         description:
-          '',
-        technologies: '',
+          'WEB 231',
+        technologies: 'JavaScript, HTML, CSS',
         learned: '',
-        link: '',
+        link: 'https://bernicetempleman1.github.io/web-231/',
       },
       {
-        name: '',
+        name: 'BioSite',
         description:
-          '',
-        technologies: '',
+          'WEB 200: GitHub BioSite Portfolio',
+        technologies: 'HTML, CSS',
         learned: '',
-        link: '',
+        link: 'https://bernicetempleman1.github.io/bioSite/',
       },
       {
-        name: '',
+        name: 'Rescue',
         description:
-          '',
-        technologies: '',
+          'WEB 200: Rescue website',
+        technologies: 'HTML, CSS',
         learned: '',
-        link: '',
-      },
-      {
-        name: '',
-        description:
-          '',
-        technologies: '',
-        learned: '',
-        link: '',
+        link: 'https://bernicetempleman1.github.io/rescue/',
       },
     ];
   }
 }
 
-//<p [innerHTML]="item.link"></p>
