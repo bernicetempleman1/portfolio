@@ -70,7 +70,7 @@ export class ProjectsComponent {
           'WEB 425: Angular and TypeScript.',
         technologies: 'Angular, TypeScript, JavaScript, HTML, CSS',
         learned: 'Angular routing, error handling and unit testing, Angular 404 Page Not Found, Input/Output properties',
-        link: 'https://github.com/bernicetempleman1/portfolio',
+        link: 'https://bernicetempleman1.github.io/portfolio/',
       },
       {
         name: 'RPG Character Builder',
