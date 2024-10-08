@@ -21,16 +21,17 @@ import { Component } from '@angular/core';
         Explore our selection of handcrafted projects, each filled with fresh
         technologies and vibrant learnings to satisfy your cravings.
       </p>
-      <ul class="players-container">
+      <ul >
         @for (item of projects; track item) {
-        <li class="projects-item">
+          <li class="projects-item"  >
+
           <div class="card">
-            <h3>{{ item.name }}</h3>
-            <p>{{ item.description }}</p>
-            <p>{{ item.technologies }}</p>
-            <p>{{ item.learned }}</p>
-            <p>{{ item.link }}</p>
-            <a href="{{ item.link }}">Link</a>
+            <h3>Name: {{ item.name }}</h3>
+            <p>Description: {{ item.description }}</p>
+            <p>Technologies: {{ item.technologies }}</p>
+            <p>Learned: {{ item.learned }}</p>
+            <p>Location: {{ item.link }}</p>
+            <a href="{{ item.link }}">Project Link</a>
 
           </div>
         </li>
@@ -68,7 +69,7 @@ export class ProjectsComponent {
         description:
           'WEB 425: Angular and TypeScript.',
         technologies: 'Angular, TypeScript, JavaScript, HTML, CSS',
-        learned: '',
+        learned: 'Angular routing, error handling and unit testing, Angular 404 Page Not Found, Input/Output properties',
         link: 'https://github.com/bernicetempleman1/portfolio',
       },
       {
@@ -76,7 +77,7 @@ export class ProjectsComponent {
         description:
           'WEB 425: Angular and TypeScript.The RPG Character Builder creates an immersive web application that caters to gamers and RPG enthusiasts.!',
         technologies: 'Angular, TypeScript, JavaScript, HTML, CSS',
-        learned: '',
+        learned: 'Angular routing, error handling and unit testing, Template Driven Forms and TDD, Dynamic Forms and TDD, Input/Output properties, HTTP client, modules and deployment',
         link: 'https://bernicetempleman1.github.io/rpg-character-builder/',
       },
       {
@@ -84,7 +85,7 @@ export class ProjectsComponent {
         description:
           'WEB 425: Angular and TypeScript.The RPG Character Builder creates an immersive web application that caters to gamers and RPG enthusiasts.!',
         technologies: 'Angular, JavaScript, HTML, CSS',
-        learned: '',
+        learned: 'Angular routing, error handling and unit testing, Template Driven Forms and TDD, Dynamic Forms and TDD, Input/Output properties, HTTP client, modules and deployment',
         link: 'https://bernicetempleman1.github.io/virtual-taco-stand/',
       },
 
@@ -92,16 +93,24 @@ export class ProjectsComponent {
         name: 'In and Out Books',
         description:
           'WEB 420: RESTful APIs. The idea of the “In-N-Out-Books” was inspired by the love of books and the desire to create a platform where uses can manage their own collection of book',
-        technologies: '',
-        learned: '',
+        technologies: 'Node.js, Express, JavaScript, Jest, HTML, CSS',
+        learned: 'the purpose of APIs (Application Programming Interfaces), their functions, and how to use and manage them in the context of web development. Topics include REST methodologies, design best practices, security, testing, debugging, documentation, and the OpenAPI specification. Node.js will be used for the programming language and testing and debugging the solutions',
         link: 'https://templeman-in-n-out-books.onrender.com',
+      },
+      {
+        name: 'In and Out Books with method override',
+        description:
+          'WEB 420: RESTful APIs. The idea of the “In-N-Out-Books” was inspired by the love of books and the desire to create a platform where uses can manage their own collection of book',
+        technologies: 'Node.js, Express, JavaScript, Jest, HTML, CSS',
+        learned: 'the purpose of APIs (Application Programming Interfaces), their functions, and how to use and manage them in the context of web development. Topics include REST methodologies, design best practices, security, testing, debugging, documentation, and the OpenAPI specification. Node.js will be used for the programming language and testing and debugging the solutions',
+        link: 'https://templeman-in-n-out-books-mo.onrender.com',
       },
       {
         name: 'WhatABook',
         description:
           'WEB 335: NoSQL. ',
         technologies: '',
-        learned: '',
+        learned: 'Core concepts of non-relational database structures. Topics include Key/Value pairs, Table Structures, Data Types, Data Access Controls, and NoSQL Queries. Relational databases (MySQL) are explored to contrast the capabilities of non-relational to relational database structures. Python used for database interface',
         link: 'https://github.com/bernicetempleman1/web-335/',
       },
       {
@@ -109,7 +118,7 @@ export class ProjectsComponent {
         description:
           'WEB 340',
         technologies: 'Node.js, Express, JavaScript',
-        learned: '',
+        learned: 'The process of building web-based applications in Node.js with Express, create web forms, collect and process information obtained from them, retrieve and update information contained in a MongoDB database, and build stand-alone RESTFul API’s. ',
         link: 'https://github.com/bernicetempleman1/web-340',
       },
       {
@@ -117,7 +126,7 @@ export class ProjectsComponent {
         description:
           'WEB 330',
         technologies: 'JavaScript, HTML, CSS',
-        learned: '',
+        learned: 'Object-oriented programming, unit testing, asynchronous executions, files and streams, lambda expressions, and module bundlers. ',
         link: 'https://bernicetempleman1.github.io/web-330/',
       },
       {
@@ -125,7 +134,7 @@ export class ProjectsComponent {
         description:
           'WEB 231',
         technologies: 'JavaScript, HTML, CSS',
-        learned: '',
+        learned: 'Concepts of programming using JavaScript in the Enterprise. The focus is on the JavaScript programming language syntax, software design, coding, documenting, and debugging strategies. Topics include Data Types, Reference Types, Operators, Objects, Control Statements, and Functions. Projects use these topics in an intensive, hands-on format to build enterprise relevant solutions. ',
         link: 'https://bernicetempleman1.github.io/web-231/',
       },
       {
@@ -133,7 +142,7 @@ export class ProjectsComponent {
         description:
           'WEB 200: GitHub BioSite Portfolio',
         technologies: 'HTML, CSS',
-        learned: '',
+        learned: 'The fundamentals of web development: web standards and accessibility/usability',
         link: 'https://bernicetempleman1.github.io/bioSite/',
       },
       {
@@ -141,7 +150,7 @@ export class ProjectsComponent {
         description:
           'WEB 200: Rescue website',
         technologies: 'HTML, CSS',
-        learned: '',
+        learned: 'The fundamentals of web development: web standards and accessibility/usability',
         link: 'https://bernicetempleman1.github.io/rescue/',
       },
     ];
