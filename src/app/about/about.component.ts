@@ -11,18 +11,23 @@ import { Component } from '@angular/core';
       <!-- Use the main area to add the main content to the webpage -->
       <main>
         <section class="grid2">
-          <div>
-            <img
-              style="vertical-align:middle"
-              src="assets/Bernice1.jpg"
-              alt="Bernice"
-            />
-            <span style=""
-              >Bernice Templeman's About Page</span
-            >
-            <p>This page includes a short bio and an image. I share a bit about
-              who I am, my journey into development, and what I'm passionate
-              about</p>
+          <div class="container">
+            <div class="image">
+              <img
+                style="vertical-align:middle"
+                src="assets/Bernice1.jpg"
+                alt="Bernice"
+              />
+            </div>
+            <div class="text">
+              <h2>Bernice Templeman's About Page</h2>
+
+              <p>
+                This page includes a short bio and an image. I share a bit about
+                who I am, my journey into development, and what I'm passionate
+                about.
+              </p>
+            </div>
           </div>
 
           <!-- Paragraph 1: Purpose-->
@@ -138,6 +143,23 @@ import { Component } from '@angular/core';
       </main>
     </div>
   `,
-  styles: ``,
+  styles: `
+  .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+      img {
+        max-width: 100%
+      }
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 20px;
+        padding-left: 20px;
+      }
+
+  `,
 })
 export class AboutComponent {}

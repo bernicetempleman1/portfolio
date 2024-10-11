@@ -133,12 +133,14 @@ import { Component } from '@angular/core';
       </div>
       <div>
         <h2>Download My Resume</h2>
-        <p>
-          <a
-            href="https://drive.google.com/file/d/1XnJwTrCZN8uItGYQ5AMNbhJZsAMf9iFp/view?usp=drive_link"
-            >Resume</a
+
+        <div>
+          <button
+            onclick="window.open('https://drive.google.com/file/d/1XnJwTrCZN8uItGYQ5AMNbhJZsAMf9iFp/view?usp=drive_link')"
           >
-        </p>
+            Download Resume
+          </button>
+        </div>
       </div>
     </div>
   `,
@@ -153,7 +155,7 @@ import { Component } from '@angular/core';
       .degree-item {
         flex: 0 1 calc(33.33% - 20px);
         margin: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
       }
       .experience-container {
         display: flex;
@@ -164,7 +166,7 @@ import { Component } from '@angular/core';
       .experience-item {
         flex: 0 1 calc(33.33% - 20px);
         margin: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
       }
       .card {
         padding: 20px;
@@ -195,6 +197,18 @@ import { Component } from '@angular/core';
       }
       ul {
         display: inline-block;
+      }
+      button {
+        display: inline-block;
+        margin: 0 auto;
+        background-color: #008cba;
+        color: white;
+        padding: 15px 32px;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #04aa6d; /* Green */
+        color: white;
       }
     `,
   ],
@@ -292,63 +306,72 @@ export class ResumeComponent {
         employer: "Macy's",
         location: 'Towson, MD',
         title: 'Sales Support',
-        description: ' Customer Service,Front of House Support, Administrative Support Team,  At Your Service, Online order fulfillment, Receiving Support',
+        description:
+          ' Customer Service,Front of House Support, Administrative Support Team,  At Your Service, Online order fulfillment, Receiving Support',
         dates: 'September 2022 - present',
       },
       {
         employer: 'Revature',
         location: 'Baltimore, MD',
         title: 'Software Engineer | ServiceNow Developer and Administrator',
-        description: ' Assisted the ServiceNow team in daily platform administration tasks, including user management, access control, and system maintenance.',
+        description:
+          ' Assisted the ServiceNow team in daily platform administration tasks, including user management, access control, and system maintenance.',
         dates: 'October 2021 - September 2022',
       },
       {
         employer: 'TTEC',
         location: 'Youngstown, OH',
         title: 'Customer Service Support',
-        description: 'Serves customers by providing product and service information and resolving product and service problems.',
+        description:
+          'Serves customers by providing product and service information and resolving product and service problems.',
         dates: 'June 2020 -  September 2021',
       },
       {
         employer: "Macy's",
         location: 'Towson, MD',
         title: 'Sales Support',
-        description: ' Interacted with customers to provide assistance, resolve inquiries, and address concerns, ensuring a positive and memorable shopping experience.',
+        description:
+          ' Interacted with customers to provide assistance, resolve inquiries, and address concerns, ensuring a positive and memorable shopping experience.',
         dates: '2018 -2019',
       },
       {
         employer: "Macy's",
         location: 'Aventura, Fl',
         title: 'Sales Support',
-        description: 'Met and connected with customers, asked questions, listened, and advised to meet their needs',
+        description:
+          'Met and connected with customers, asked questions, listened, and advised to meet their needs',
         dates: '2014 - 2018',
       },
       {
         employer: 'GlassHouse Technologies',
         location: 'Burlington, NC',
         title: 'Sales Support',
-        description: ' Performed troubleshooting on System Hardware, Software, Network, Installation and Configuration',
+        description:
+          ' Performed troubleshooting on System Hardware, Software, Network, Installation and Configuration',
         dates: '2007-2009',
       },
       {
         employer: 'Labcorp',
         location: 'Burlington, NC',
         title: 'Sales Support',
-        description: ' Monitored and supported over 200 Linux servers responsible for lab testing, Internet/Intranet, Financial and Clinical Trial departments',
+        description:
+          ' Monitored and supported over 200 Linux servers responsible for lab testing, Internet/Intranet, Financial and Clinical Trial departments',
         dates: '2004-2007',
       },
       {
         employer: 'Glasshouse Technologies',
         location: 'Durham, NC',
         title: 'Sales Support',
-        description: ' Addressed customer technical issues through the use of technical expertise, knowledge base and tools',
+        description:
+          ' Addressed customer technical issues through the use of technical expertise, knowledge base and tools',
         dates: '2000-2004',
       },
       {
         employer: 'Raytheon',
         location: 'Falls Church, VA',
         title: 'Sales Support',
-        description: 'Worked in a small team environment developing and testing software for a Dynamic Airspace Management System (DAMS)',
+        description:
+          'Worked in a small team environment developing and testing software for a Dynamic Airspace Management System (DAMS)',
         dates: '1997-2000',
       },
     ];

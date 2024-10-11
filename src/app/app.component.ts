@@ -7,8 +7,12 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   imports: [RouterOutlet, RouterLink],
   template: `
   <div class="wrapper">
-  <header class="banner">
-  <img src="/assets/BerniceHeroCloud.png" alt="website banner for portfolio" class="banner-img">
+  <header class=banner>
+    <h1>Bernice Templeman</h1>
+
+    <img src="./assets/BerniceHeroCloud3.png" alt="website banner for portfolio" class="banner-img">
+    <h2>Web Developer</h2>
+
 </header>
 <main class="main-content">
 
@@ -47,3 +51,5 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
 }
+
+

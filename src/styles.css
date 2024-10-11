@@ -30,7 +30,7 @@ body {
   color: #000000;
 }
 .banner {
-  background-color: #000000;
+  background-color: navy;
   color: #ffffff;
   text-align: center;
 }
@@ -79,6 +79,7 @@ h6 {
 
   font-family: "Merriweather", serif;
 }
+
 .footer {
   background-color: navy;
   color: #ffffff;

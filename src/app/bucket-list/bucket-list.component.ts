@@ -33,6 +33,7 @@ import { CommonModule } from '@angular/common';
 li {
 margin-bottom: 10px;
 padding: 5px;
+list-style-type: none;
 }
 `,
 })
