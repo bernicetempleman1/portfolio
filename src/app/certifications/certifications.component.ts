@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
     <div class="tab-desk desktop" id="table">
       <table>
         <caption>
-          Bernice Templeman's Certifications
+          Certifications
         </caption>
         <tr>
           <!-- Row 1 -->
@@ -152,9 +152,10 @@ import { Component } from '@angular/core';
         </tr>
       </table>
 
+      <div id="verify">
       <h2>Certification Verification</h2>
 
-      <div>
+
         <button
           onclick="window.open('https://partnerportal.service-now.com/partnerhome?id=verify_certificate')"
         >
@@ -165,6 +166,9 @@ import { Component } from '@angular/core';
   `,
   styles: [
     `
+    #verify {
+      text-align: center;
+    }
       button {
         display: inline-block;
         margin: 0 auto;

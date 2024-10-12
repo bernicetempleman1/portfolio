@@ -20,7 +20,7 @@ import { BucketListComponent } from '../bucket-list/bucket-list.component';
     <div class="intro">
       <div>
 
-      <h1>Bernice Templeman's Portfolio</h1>
+      <h1>Portfolio</h1>
       <h2></h2>
       <p>
         Brief Introduction: Hi, my name is Bernice Templeman, and I am a
@@ -56,6 +56,9 @@ import { BucketListComponent } from '../bucket-list/bucket-list.component';
   `,
   styles: [
     `
+    h1 {
+      text-align: center;
+    }
     .intro {
 
       display: flex;

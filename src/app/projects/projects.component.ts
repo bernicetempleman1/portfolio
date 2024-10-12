@@ -17,7 +17,7 @@ import { Component } from '@angular/core';
   imports: [CommonModule],
   template: `
     <div>
-      <h1>Bernice Templeman's Projects</h1>
+      <h1>Projects</h1>
       <p>
         Explore our selection of handcrafted projects, each filled with fresh
         technologies and vibrant learnings to satisfy your cravings.
@@ -55,6 +55,9 @@ import { Component } from '@angular/core';
 
   styles: [
     `
+    h1 {
+      text-align: center;
+    }
       .container {
         display: flex;
 
@@ -78,7 +81,7 @@ import { Component } from '@angular/core';
         flex: 0 1 calc(33.33% - 20px);
         padding: 20px;
         margin: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 8px navy;
       }
       .card {
         padding: 20px;
@@ -158,13 +161,22 @@ export class ProjectsComponent {
         link: 'https://github.com/bernicetempleman1/web-335/',
       },
       {
-        picture: 'assets/whatabook.png',
+        picture: 'assets/web-335.png',
+        name: 'WEB 335',
+        description: 'WEB 335: NoSQL. ',
+        technologies: 'MongoDB, Python, NoSQL.',
+        learned:
+          'Core concepts of non-relational database structures. Topics include Key/Value pairs, Table Structures, Data Types, Data Access Controls, and NoSQL Queries. Relational databases (MySQL) are explored to contrast the capabilities of non-relational to relational database structures. Python used for database interface',
+        link: 'https://bernicetempleman1.github.io/web-335/',
+      },
+      {
+        picture: 'assets/web-340.png',
         name: 'Node.js with Express',
         description: 'WEB 340',
         technologies: 'Node.js, Express, JavaScript',
         learned:
           'The process of building web-based applications in Node.js with Express, create web forms, collect and process information obtained from them, retrieve and update information contained in a MongoDB database, and build stand-alone RESTFul API’s. ',
-        link: 'https://github.com/bernicetempleman1/web-340',
+        link: 'https://bernicetempleman1.github.io/web-340/',
       },
       {
         picture: 'assets/web330-js2.png',

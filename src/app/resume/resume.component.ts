@@ -36,7 +36,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <h1>Bernice Templeman's Resume</h1>
+    <h1>Resume</h1>
 
     <div>
       <div>
@@ -56,41 +56,49 @@ import { Component } from '@angular/core';
         </ul>
       </div>
 
-      <div id="wrapper">
-        <h2>Skills</h2>
+      <h2>Skills</h2>
 
-        <div id="hardskills">
-          @if (hardskills.length > 0) {
-          <ul>
-            @for (skill of hardskills; track skill) {
-            <li>
-              <strong>{{ skill.skill }} </strong>
-              <br />
-            </li>
-            }
-          </ul>
-          } @else {
-          <p></p>
-          }
-        </div>
+      <table>
+        <tr>
+          <th>Hard Skills</th>
+          <th>Soft Skills</th>
+        </tr>
 
-        <div id="softskills">
-          @if (softskills.length > 0) {
-          <ul>
-            @for (skill of softskills; track skill) {
-            <li>
-              <strong>
-                {{ skill.skill }}
-              </strong>
-              <br />
-            </li>
-            }
-          </ul>
-          } @else {
-          <p>No todos have been created yet</p>
-          }
-        </div>
-      </div>
+        <tr>
+          <td>JavaScript</td>
+          <td>Communication</td>
+        </tr>
+
+        <tr>
+          <td>DevOps</td>
+          <td>Emotional Intelligence</td>
+        </tr>
+        <tr>
+          <td>Agile Methodologies</td>
+          <td>Adaptability</td>
+        </tr>
+        <tr>
+          <td>API Development</td>
+          <td>Creativity</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Problem Solving</td>
+        </tr>
+        <tr>
+          <td>MongoDB</td>
+          <td>Patience</td>
+        </tr>
+        <tr>
+          <td>Angular</td>
+          <td>Self Awareness</td>
+        </tr>
+        <tr>
+          <td>TypeScript</td>
+          <td>Team work and collaboration</td>
+        </tr>
+      </table>
+
 
       <div>
         <h2>Experience</h2>
@@ -108,33 +116,37 @@ import { Component } from '@angular/core';
           }
         </ul>
       </div>
-      <div>
+      <div id="certifications">
         <h2>Certifications</h2>
-        <ul>
-          <li>Certified Application Developer: December 01, 2022</li>
-          <li>ServiceNow Certified System Administrator: December 03, 2022</li>
-          <li>
-            Certified Implementation Specialist in IT Service Management:
-            December 03, 2022
-          </li>
-          <li>
-            Certified Implementation Specialist in Human Resources: December 03,
-            2022
-          </li>
-          <li>
-            Certified Implementation Specialist in Event Management: January 14,
-            2023
-          </li>
-          <li>
-            Certified Application Specialist in Performance Analytics: January
-            14, 2023
-          </li>
-        </ul>
+
+        <table>
+          <tr>
+            <td>Certified Application Developer</td>
+          </tr>
+          <tr>
+            <td>
+              Certified Implementation Specialist in IT Service Management
+            </td>
+          </tr>
+          <tr>
+            <td>Certified Implementation Specialist in Human Resources</td>
+          </tr>
+          <tr>
+            <td>Certified Implementation Specialist in Event Management</td>
+          </tr>
+          <tr>
+            <td>Certified Application Specialist in Performance Analytics</td>
+          </tr>
+          <tr>
+            <td>ServiceNow Certified System Administrator</td>
+          </tr>
+        </table>
       </div>
+
       <div>
         <h2>Download My Resume</h2>
 
-        <div>
+        <div id="download">
           <button
             onclick="window.open('https://drive.google.com/file/d/1XnJwTrCZN8uItGYQ5AMNbhJZsAMf9iFp/view?usp=drive_link')"
           >
@@ -146,6 +158,11 @@ import { Component } from '@angular/core';
   `,
   styles: [
     `
+      h1,
+      h2,
+      #download {
+        text-align: center;
+      }
       .degree-container {
         display: flex;
         flex-wrap: wrap;
@@ -155,7 +172,7 @@ import { Component } from '@angular/core';
       .degree-item {
         flex: 0 1 calc(33.33% - 20px);
         margin: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 8px navy;
       }
       .experience-container {
         display: flex;
@@ -166,7 +183,7 @@ import { Component } from '@angular/core';
       .experience-item {
         flex: 0 1 calc(33.33% - 20px);
         margin: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 8px navy;
       }
       .card {
         padding: 20px;
@@ -178,7 +195,7 @@ import { Component } from '@angular/core';
       }
       #hardskills {
         display: flex;
-        padding-top: 50px;
+        padding-top: 10px;
         flex-wrap: wrap;
         float: left; /* add this */
         list-style-type: none;
@@ -187,8 +204,7 @@ import { Component } from '@angular/core';
       }
       #softskills {
         display: flex;
-        padding-top: 50px;
-
+        padding-top: 10px;
         flex-wrap: wrap;
         float: left; /* add this */
         list-style-type: none;
@@ -209,6 +225,19 @@ import { Component } from '@angular/core';
       button:hover {
         background-color: #04aa6d; /* Green */
         color: white;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid navy;
+      }
+      th,
+      td {
+        padding: 15px;
       }
     `,
   ],

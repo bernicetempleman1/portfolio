@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
               />
             </div>
             <div class="text">
-              <h2>Bernice Templeman's About Page</h2>
+              <h2>About Me</h2>
 
               <p>
                 This page includes a short bio and an image. I share a bit about

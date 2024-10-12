@@ -14,8 +14,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     <h2>Web Developer</h2>
 
 </header>
-<main class="main-content">
-
 
 <nav class="navbar">
   <ul>
@@ -27,6 +25,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 
   </ul>
 </nav>
+
+<main class="main-content">
 <section class="content">
   <router-outlet />
 </section>
@@ -46,6 +46,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 `,
   styles: [
     `
+
 `
   ]
 })
