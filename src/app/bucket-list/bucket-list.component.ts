@@ -11,19 +11,17 @@ import { CommonModule } from '@angular/common';
       <h1>Bucket List:</h1>
 
       @if (bucketlist.todos.length > 0) {
-        <ul>
-          @for (todo of bucketlist.todos; track todo) {
-          <li>
-            <strong
-              >{{ todo.name }} : {{ todo.description }}
-            </strong>
-            <br />
-          </li>
-          }
-        </ul>
-        } @else {
-        <p>No todos have been created yet</p>
+      <ul>
+        @for (todo of bucketlist.todos; track todo) {
+        <li>
+          <strong>{{ todo.name }} : {{ todo.description }} </strong>
+          <br />
+        </li>
         }
+      </ul>
+      } @else {
+      <p>No todos have been created yet</p>
+      }
     </div>
   `,
   styles: `
@@ -33,11 +31,10 @@ import { CommonModule } from '@angular/common';
 li {
 margin-bottom: 10px;
 padding: 5px;
+list-style-type: none;
 }
 `,
 })
-
 export class BucketListComponent {
   @Input() bucketlist!: BucketList;
-
 }

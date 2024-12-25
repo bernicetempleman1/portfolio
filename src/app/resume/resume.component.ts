@@ -36,7 +36,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <h1>Bernice Templeman's Resume</h1>
+    <h1>Resume</h1>
 
     <div>
       <div>
@@ -56,41 +56,50 @@ import { Component } from '@angular/core';
         </ul>
       </div>
 
-      <div id="wrapper">
-        <h2>Skills</h2>
+      <h2>Skills</h2>
 
-        <div id="hardskills">
-          @if (hardskills.length > 0) {
-          <ul>
-            @for (skill of hardskills; track skill) {
-            <li>
-              <strong>{{ skill.skill }} </strong>
-              <br />
-            </li>
-            }
-          </ul>
-          } @else {
-          <p></p>
-          }
-        </div>
+      <!-- switched list to table and plan to read skills in with for loop at later date -->
 
-        <div id="softskills">
-          @if (softskills.length > 0) {
-          <ul>
-            @for (skill of softskills; track skill) {
-            <li>
-              <strong>
-                {{ skill.skill }}
-              </strong>
-              <br />
-            </li>
-            }
-          </ul>
-          } @else {
-          <p>No todos have been created yet</p>
-          }
-        </div>
-      </div>
+      <table>
+        <tr>
+          <th>Hard Skills</th>
+          <th>Soft Skills</th>
+        </tr>
+
+        <tr>
+          <td>JavaScript</td>
+          <td>Communication</td>
+        </tr>
+
+        <tr>
+          <td>DevOps</td>
+          <td>Emotional Intelligence</td>
+        </tr>
+        <tr>
+          <td>Agile Methodologies</td>
+          <td>Adaptability</td>
+        </tr>
+        <tr>
+          <td>API Development</td>
+          <td>Creativity</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Problem Solving</td>
+        </tr>
+        <tr>
+          <td>MongoDB</td>
+          <td>Patience</td>
+        </tr>
+        <tr>
+          <td>Angular</td>
+          <td>Self Awareness</td>
+        </tr>
+        <tr>
+          <td>TypeScript</td>
+          <td>Team work and collaboration</td>
+        </tr>
+      </table>
 
       <div>
         <h2>Experience</h2>
@@ -108,42 +117,59 @@ import { Component } from '@angular/core';
           }
         </ul>
       </div>
-      <div>
+      <div id="certifications">
         <h2>Certifications</h2>
-        <ul>
-          <li>Certified Application Developer: December 01, 2022</li>
-          <li>ServiceNow Certified System Administrator: December 03, 2022</li>
-          <li>
-            Certified Implementation Specialist in IT Service Management:
-            December 03, 2022
-          </li>
-          <li>
-            Certified Implementation Specialist in Human Resources: December 03,
-            2022
-          </li>
-          <li>
-            Certified Implementation Specialist in Event Management: January 14,
-            2023
-          </li>
-          <li>
-            Certified Application Specialist in Performance Analytics: January
-            14, 2023
-          </li>
-        </ul>
+
+        <!-- switched list to table and plan to read certifications in with for loop at later date -->
+
+        <table>
+          <tr>
+            <td>Certified Application Developer</td>
+          </tr>
+          <tr>
+            <td>
+              Certified Implementation Specialist in IT Service Management
+            </td>
+          </tr>
+          <tr>
+            <td>Certified Implementation Specialist in Human Resources</td>
+          </tr>
+          <tr>
+            <td>Certified Implementation Specialist in Event Management</td>
+          </tr>
+          <tr>
+            <td>Certified Application Specialist in Performance Analytics</td>
+          </tr>
+          <tr>
+            <td>ServiceNow Certified System Administrator</td>
+          </tr>
+        </table>
       </div>
+
       <div>
         <h2>Download My Resume</h2>
-        <p>
-          <a
-            href="https://drive.google.com/file/d/1XnJwTrCZN8uItGYQ5AMNbhJZsAMf9iFp/view?usp=drive_link"
-            >Resume</a
+
+        <div id="download">
+          <button
+            onclick="window.open('https://drive.google.com/file/d/1HFAU_F9w4S3npRgJgJ-O9XrDnUIxz7LS/view?usp=drive_link')"
           >
-        </p>
+            Download Resume
+          </button>
+        </div>
       </div>
     </div>
   `,
   styles: [
     `
+      h1 {
+        text-align: center;
+        color: navy;
+      }
+      h1,
+      h2,
+      #download {
+        text-align: center;
+      }
       .degree-container {
         display: flex;
         flex-wrap: wrap;
@@ -153,7 +179,7 @@ import { Component } from '@angular/core';
       .degree-item {
         flex: 0 1 calc(33.33% - 20px);
         margin: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px navy;
       }
       .experience-container {
         display: flex;
@@ -164,7 +190,7 @@ import { Component } from '@angular/core';
       .experience-item {
         flex: 0 1 calc(33.33% - 20px);
         margin: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px navy;
       }
       .card {
         padding: 20px;
@@ -176,7 +202,7 @@ import { Component } from '@angular/core';
       }
       #hardskills {
         display: flex;
-        padding-top: 50px;
+        padding-top: 10px;
         flex-wrap: wrap;
         float: left; /* add this */
         list-style-type: none;
@@ -185,8 +211,7 @@ import { Component } from '@angular/core';
       }
       #softskills {
         display: flex;
-        padding-top: 50px;
-
+        padding-top: 10px;
         flex-wrap: wrap;
         float: left; /* add this */
         list-style-type: none;
@@ -195,6 +220,31 @@ import { Component } from '@angular/core';
       }
       ul {
         display: inline-block;
+      }
+      button {
+        display: inline-block;
+        margin: 0 auto;
+        background-color: #008cba;
+        color: white;
+        padding: 15px 32px;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #04aa6d; /* Green */
+        color: white;
+      }
+      table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid navy;
+      }
+      th,
+      td {
+        padding: 15px;
       }
     `,
   ],
@@ -292,63 +342,72 @@ export class ResumeComponent {
         employer: "Macy's",
         location: 'Towson, MD',
         title: 'Sales Support',
-        description: ' Customer Service,Front of House Support, Administrative Support Team,  At Your Service, Online order fulfillment, Receiving Support',
+        description:
+          ' Customer Service,Front of House Support, Administrative Support Team,  At Your Service, Online order fulfillment, Receiving Support',
         dates: 'September 2022 - present',
       },
       {
         employer: 'Revature',
         location: 'Baltimore, MD',
         title: 'Software Engineer | ServiceNow Developer and Administrator',
-        description: ' Assisted the ServiceNow team in daily platform administration tasks, including user management, access control, and system maintenance.',
+        description:
+          ' Assisted the ServiceNow team in daily platform administration tasks, including user management, access control, and system maintenance.',
         dates: 'October 2021 - September 2022',
       },
       {
         employer: 'TTEC',
         location: 'Youngstown, OH',
         title: 'Customer Service Support',
-        description: 'Serves customers by providing product and service information and resolving product and service problems.',
+        description:
+          'Serves customers by providing product and service information and resolving product and service problems.',
         dates: 'June 2020 -  September 2021',
       },
       {
         employer: "Macy's",
         location: 'Towson, MD',
         title: 'Sales Support',
-        description: ' Interacted with customers to provide assistance, resolve inquiries, and address concerns, ensuring a positive and memorable shopping experience.',
+        description:
+          ' Interacted with customers to provide assistance, resolve inquiries, and address concerns, ensuring a positive and memorable shopping experience.',
         dates: '2018 -2019',
       },
       {
         employer: "Macy's",
         location: 'Aventura, Fl',
         title: 'Sales Support',
-        description: 'Met and connected with customers, asked questions, listened, and advised to meet their needs',
+        description:
+          'Met and connected with customers, asked questions, listened, and advised to meet their needs',
         dates: '2014 - 2018',
       },
       {
         employer: 'GlassHouse Technologies',
         location: 'Burlington, NC',
         title: 'Sales Support',
-        description: ' Performed troubleshooting on System Hardware, Software, Network, Installation and Configuration',
+        description:
+          ' Performed troubleshooting on System Hardware, Software, Network, Installation and Configuration',
         dates: '2007-2009',
       },
       {
         employer: 'Labcorp',
         location: 'Burlington, NC',
         title: 'Sales Support',
-        description: ' Monitored and supported over 200 Linux servers responsible for lab testing, Internet/Intranet, Financial and Clinical Trial departments',
+        description:
+          ' Monitored and supported over 200 Linux servers responsible for lab testing, Internet/Intranet, Financial and Clinical Trial departments',
         dates: '2004-2007',
       },
       {
         employer: 'Glasshouse Technologies',
         location: 'Durham, NC',
         title: 'Sales Support',
-        description: ' Addressed customer technical issues through the use of technical expertise, knowledge base and tools',
+        description:
+          ' Addressed customer technical issues through the use of technical expertise, knowledge base and tools',
         dates: '2000-2004',
       },
       {
         employer: 'Raytheon',
         location: 'Falls Church, VA',
         title: 'Sales Support',
-        description: 'Worked in a small team environment developing and testing software for a Dynamic Airspace Management System (DAMS)',
+        description:
+          'Worked in a small team environment developing and testing software for a Dynamic Airspace Management System (DAMS)',
         dates: '1997-2000',
       },
     ];

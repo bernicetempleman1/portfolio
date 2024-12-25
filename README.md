@@ -14,6 +14,7 @@
 ng test  
 ng serve
 
+
  npm install angular-cli-ghpages
 
  index.html (<base href="/"> or <base href="/portfolio/">)

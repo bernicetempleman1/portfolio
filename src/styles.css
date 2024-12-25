@@ -30,7 +30,7 @@ body {
   color: #000000;
 }
 .banner {
-  background-color: #000000;
+  background-color: navy;
   color: #ffffff;
   text-align: center;
 }
@@ -42,10 +42,12 @@ body {
   display: flex;
   flex: 1;
 }
+/*
 .navbar {
   flex: 0 0 200px;
-  padding: 20px;
+  padding: 10px;
 }
+  */
 h1,
 h2,
 h3,
@@ -79,6 +81,7 @@ h6 {
 
   font-family: "Merriweather", serif;
 }
+
 .footer {
   background-color: navy;
   color: #ffffff;
@@ -93,3 +96,39 @@ h6 {
 .footer a:hover {
   text-decoration: underline;
 }
+
+
+.navbar {
+padding-top: 5px;
+
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: navy;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: skyblue;
+}
+
+.navbar .active {
+  background-color: #04AA6D;
+}
+
+
