@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
               />
             </div>
             <div class="text">
-              <h2>About Me</h2>
+              <h1>About Me</h1>
 
               <p>
                 This page includes a short bio and an image. I share a bit about
@@ -47,11 +47,12 @@ import { Component } from '@angular/core';
           <!-- Paragraph 3: Values-->
           <p>Values:</p>
           <ol>
-            <li>Collaborative</li>
-            <li>Integrity</li>
-            <li>Innovation</li>
+            <li>Leadership</li>
+            <li>Serve with integrity</li>
+            <li>Take care of each other</li>
+            <li>Inclusion</li>
+            <li>Collaboration</li>
             <li>Growth</li>
-            <li>Service</li>
           </ol>
 
           <article>
@@ -60,12 +61,11 @@ import { Component } from '@angular/core';
 
               <!-- 1st paragraph element: Use the first paragraph below to answer tell me about yourself -->
               <p>
-                Thank you for asking. I am a collaborative and solution-driven
+                Thank you for asking. I am a 
                 software developer with over five years of experience working
-                with engineers, developers, and programmers. I have a degree in
-                Computer Science from Youngstown State University and a Master
-                of Science in Computer Information Systems from the Florida
-                Institute of Technology.
+                with engineers, developers, and programmers. I have a Bachelor of Science degree in
+                Web Development from Bellevue University, a Master of Science in Computer Information Systems from the Florida
+                Institute of Technology, and a Bachelor or Science Computer Science from Youngstown State University.
               </p>
 
               <p>
@@ -80,14 +80,8 @@ import { Component } from '@angular/core';
               </p>
 
               <p>
-                I worked on several projects using Java, JavaScript, HTML, C++,
-                TypeScript, Visual Basic, MySQL, and Fortran.
-              </p>
-
-              <p>
-                Since my latest role asked for Web Development, I signed up and
-                started an online web development degree to increase my
-                knowledge as quickly as possible.
+                I worked on several projects using JavaScript, Angular, HTML, C++,
+                TypeScript, Node.js, Express.js, MongoDB, Java, Visual Basic, MySQL, and Fortran.
               </p>
 
               <p>
@@ -144,6 +138,10 @@ import { Component } from '@angular/core';
     </div>
   `,
   styles: `
+  h1 {
+    text-align: center;
+    color: navy;
+  }
   .container {
         display: flex;
         align-items: center;

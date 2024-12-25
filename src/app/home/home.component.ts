@@ -16,55 +16,51 @@ import { BucketListComponent } from '../bucket-list/bucket-list.component';
   standalone: true,
 
   template: `
-
     <div class="intro">
       <div>
+        <h1>Portfolio</h1>
+        <h2></h2>
+        <p>
+          Brief Introduction: Hi, my name is Bernice Templeman, and I am a
+          Software Developer. I am completing a bachelor of science in web
+          development at Bellevue University.
+        </p>
+        <p>
+          I first learned to program in high school and have always continued to
+          update my skill set continually. I previously completed a bachelor of
+          science degree in Computer Science and a master of science degree in
+          Computer Information Systems. I have also worked in Information
+          Technology as a Software Engineer, ServiceNow Developer and
+          Administrator, Unix and Linux System Administrator, Network Attached
+          Storage Technical Suppor Engineer II, and computer programmer.
+        </p>
+        <p>
+          I'm eager to leverage my expertise to help Companies achieve their
+          financial goals and explore new growth opportunities.
+        </p>
+        <p>
+          In my spare time, I have worked on WordPress and WIX website
+          development, learning new skills, exercising, and reading health and
+          nutrition articles on longevity.
+        </p>
+        <p></p>
+      </div>
 
-      <h1>Portfolio</h1>
-      <h2></h2>
-      <p>
-        Brief Introduction: Hi, my name is Bernice Templeman, and I am a
-        Software Developer. I am completing a bachelor of science in web
-        development at Bellevue University.
-      </p>
-      <p>
-        I first learned to program in high school and have always continued to
-        update my skill set continually. I previously completed a bachelor of
-        science degree in Computer Science and a master of science degree in
-        Computer Information Systems. I have also worked in Information
-        Technology as a Software Engineer, ServiceNow Developer and
-        Administrator, Unix and Linux System Administrator, Network Attached
-        Storage Technical Suppor Engineer II, and computer programmer.
-      </p>
-      <p>
-        I'm eager to leverage my expertise to help Companies achieve their
-        financial goals and explore new growth opportunities.
-      </p>
-      <p>
-        In my spare time, I have worked on WordPress and WIX website
-        development, learning new skills, exercising, and reading health and
-        nutrition articles on longevity.
-      </p>
-      <p></p>
+      <div class="bucket-list">
+        <app-bucket-list [bucketlist]="bucketlist"></app-bucket-list>
+      </div>
     </div>
-
-    <div class="bucket-list">
-      <app-bucket-list [bucketlist]="bucketlist"></app-bucket-list>
-    </div>
-    </div>
-
   `,
   styles: [
     `
-    h1 {
-      text-align: center;
-    }
-    .intro {
-
-      display: flex;
+      h1 {
+        text-align: center;
+        color: navy;
+      }
+      .intro {
+        display: flex;
         justify-content: space-between;
         gap: 10px;
-
       }
       .highlights-container {
         display: flex;
@@ -90,7 +86,6 @@ import { BucketListComponent } from '../bucket-list/bucket-list.component';
   ],
   imports: [CommonModule, BucketListComponent],
 })
-
 export class HomeComponent {
   todos: Todo[];
   bucketlist: BucketList;
@@ -99,19 +94,18 @@ export class HomeComponent {
   description: string = '';
 
   constructor() {
-    this.todos = [{
-      name: 'Software development paid work',
-      description: 'Happy'
-    },
+    this.todos = [
+      {
+        name: 'Software development paid work',
+        description: 'Happy',
+      },
     ];
     this.bucketlist = { todos: [] };
 
-    for(var i = 0; i <= this.todos.length - 1; i++){
+    for (var i = 0; i <= this.todos.length - 1; i++) {
       this.bucketlist.todos.push(this.todos[i]);
     }
-
   }
 
   @Output() orderUpdated = new EventEmitter<BucketList>();
-  }
-
+}

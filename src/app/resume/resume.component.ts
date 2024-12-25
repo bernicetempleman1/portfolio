@@ -58,6 +58,8 @@ import { Component } from '@angular/core';
 
       <h2>Skills</h2>
 
+      <!-- switched list to table and plan to read skills in with for loop at later date -->
+
       <table>
         <tr>
           <th>Hard Skills</th>
@@ -99,7 +101,6 @@ import { Component } from '@angular/core';
         </tr>
       </table>
 
-
       <div>
         <h2>Experience</h2>
         <ul class="experience-container">
@@ -118,6 +119,8 @@ import { Component } from '@angular/core';
       </div>
       <div id="certifications">
         <h2>Certifications</h2>
+
+        <!-- switched list to table and plan to read certifications in with for loop at later date -->
 
         <table>
           <tr>
@@ -148,7 +151,7 @@ import { Component } from '@angular/core';
 
         <div id="download">
           <button
-            onclick="window.open('https://drive.google.com/file/d/1XnJwTrCZN8uItGYQ5AMNbhJZsAMf9iFp/view?usp=drive_link')"
+            onclick="window.open('https://drive.google.com/file/d/1HFAU_F9w4S3npRgJgJ-O9XrDnUIxz7LS/view?usp=drive_link')"
           >
             Download Resume
           </button>
@@ -158,6 +161,10 @@ import { Component } from '@angular/core';
   `,
   styles: [
     `
+      h1 {
+        text-align: center;
+        color: navy;
+      }
       h1,
       h2,
       #download {

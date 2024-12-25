@@ -6,11 +6,9 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   template: `
+  <h1>Certifications</h1>
     <div class="tab-desk desktop" id="table">
       <table>
-        <caption>
-          Certifications
-        </caption>
         <tr>
           <!-- Row 1 -->
           <th>Certification</th>
@@ -166,6 +164,10 @@ import { Component } from '@angular/core';
   `,
   styles: [
     `
+    h1 {
+      color: navy;
+      text-align: center;
+    }
     #verify {
       text-align: center;
     }

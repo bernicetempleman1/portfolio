@@ -1,5 +1,5 @@
 export interface ProjectItem {
-picture: string;
+  picture: string;
   name: string;
   description: string;
   technologies: string;
@@ -29,24 +29,20 @@ import { Component } from '@angular/core';
             <div class="image">
               <img
                 style="vertical-align:middle"
-                src="{{ item.picture}}"
+                src="{{ item.picture }}"
                 alt="Project Image"
-
               />
             </div>
             <div class="text">
               <h3>{{ item.name }}</h3>
-
             </div>
-        </div>
-            <p>Description: {{ item.description }}</p>
-              <p>Technologies: {{ item.technologies }}</p>
-              <p>Learned: {{ item.learned }}</p>
-              <a href="{{ item.link }}" class="button-link" target="_blank"
-                >Project Link</a
-              >
-
-
+          </div>
+          <p>Description: {{ item.description }}</p>
+          <p>Technologies: {{ item.technologies }}</p>
+          <p>Learned: {{ item.learned }}</p>
+          <a href="{{ item.link }}" class="button-link" target="_blank"
+            >Project Link</a
+          >
         </li>
         }
       </ul>
@@ -55,18 +51,18 @@ import { Component } from '@angular/core';
 
   styles: [
     `
-    h1 {
-      text-align: center;
-    }
+      h1 {
+        text-align: center;
+        color: navy;
+      }
       .container {
         display: flex;
-
       }
       img {
-        max-width: 100%
+        max-width: 100%;
       }
       .image {
-        flex-basis: 40%
+        flex-basis: 40%;
       }
       .text {
         font-size: 20px;
@@ -75,7 +71,7 @@ import { Component } from '@angular/core';
       .projects-container {
         list-style-type: none;
         padding: 20px;
-        margin: .9em;
+        margin: 0.9em;
       }
       .projects-item {
         flex: 0 1 calc(33.33% - 20px);
@@ -154,11 +150,12 @@ export class ProjectsComponent {
       {
         picture: 'assets/whatabook-py.png',
         name: 'WhatABook',
-        description: 'WEB 335: NoSQL. ',
+        description:
+          'WhatABook, a small used book store has decided to expand their presence by offering customers a solution they can install on their personal computers. ',
         technologies: 'MongoDB, Python, NoSQL.',
         learned:
           'Core concepts of non-relational database structures. Topics include Key/Value pairs, Table Structures, Data Types, Data Access Controls, and NoSQL Queries. Relational databases (MySQL) are explored to contrast the capabilities of non-relational to relational database structures. Python used for database interface',
-        link: 'https://github.com/bernicetempleman1/web-335/',
+        link: 'https://bernicetempleman1.github.io/whatabook/',
       },
       {
         picture: 'assets/web-335.png',
